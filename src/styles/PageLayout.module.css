@@ -1,0 +1,18 @@
+.pageLayout {
+    max-width: 1200px; /* İçerik genişliği */
+    margin: 0 auto; /* Ortalamak için */
+    padding: 20px; /* Tüm kenarlardan boşluk */
+    box-sizing: border-box; /* Padding'i dahil et */
+    min-height: 100vh; /* Sayfanın yüksekliği en az ekran kadar */
+    display: flex;
+    flex-direction: column; /* İçeriği dikey hizala */
+    justify-content: center; /* Dikey ortala */
+    align-items: center; /* Yatay ortala */
+  }
+  
+  @media (max-width: 768px) {
+    .pageLayout {
+      padding: 10px; /* Küçük ekranlar için daha küçük boşluk */
+    }
+  }
+  

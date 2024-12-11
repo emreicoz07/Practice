@@ -1,0 +1,49 @@
+/* Reset and Base Styles */
+body, h1, h2, h3, p, ul, li, form, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #c01f1f; /* Siyah arka plan */
+  color: #fff; /* Beyaz yazı */
+  line-height: 1.6;
+}
+
+/* Form Elements */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Form elemanları arasına boşluk */
+  margin-top: 20px;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: #ffffff; /* Kırmızı ton */
+}
+
+form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #e63946; /* Kırmızı */
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ff6b6b; /* Daha açık kırmızı */
+}

@@ -1,0 +1,119 @@
+/* Navbar Container */
+.navbar {
+  position: fixed; /* Sayfanın en üstünde sabit kalır */
+  top: 0;
+  left: 0;
+  width: 100%; /* Tüm genişliği kaplar */
+  z-index: 1000; /* Diğer içeriklerin üzerinde */
+  background-color: #111; /* Siyah arka plan */
+  color: #fff; /* Beyaz yazı */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Hafif gölge */
+}
+
+/* İçerik */
+.container {
+  display: flex;
+  justify-content: space-between; /* Sağ ve sol hizalama */
+  align-items: center; /* Dikey ortalama */
+  max-width: 1200px; /* İçeriği sınırlamak için */
+  margin: 0 auto; /* Ortalamak için */
+  padding: 10px 20px; /* İç boşluk */
+}
+
+/* Logo */
+.logo a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e63946; /* Kırmızı ton */
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #e63946; /* Kırmızı hover */
+}
+
+/* Auth Buttons */
+.auth {
+  display: flex;
+  gap: 10px;
+}
+
+.signIn, .signUp {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.signIn {
+  background-color: transparent;
+  color: #fff;
+}
+
+.signUp {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.signIn:hover {
+  color: #e63946;
+}
+
+.signUp:hover {
+  background-color: #ff6b6b;
+}
+
+/* Hamburger Button (Hidden on Desktop) */
+.hamburger {
+  display: none; /* Desktop'ta gizle */
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Mobilde menüyü gizle */
+    flex-direction: column; /* Menü elemanlarını dikey hizala */
+    position: absolute;
+    top: 60px; /* Navbar'ın hemen altında */
+    right: 0;
+    background-color: #111; /* Siyah arka plan */
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .menu.menuOpen {
+    display: flex; /* Menü açıldığında göster */
+  }
+
+  .hamburger {
+    display: block; /* Mobilde göster */
+  }
+}

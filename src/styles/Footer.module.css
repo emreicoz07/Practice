@@ -1,0 +1,44 @@
+/* Footer Container */
+.footer {
+  background-color: #111; /* Siyah arka plan */
+  color: #fff; /* Beyaz yazı */
+  text-align: center; /* Ortala */
+  padding: 20px 0; /* Yukarı ve aşağı boşluk */
+  position: fixed; /* Sabit pozisyon */
+  bottom: 0; /* Sayfanın en altında */
+  left: 0; /* Sol hizala */
+  width: 100%; /* Tam genişlik */
+  z-index: 1000; /* Üstte görünmesini sağla */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Hafif üst gölge */
+}
+
+/* İçerik */
+.container {
+  max-width: 1200px; /* İçeriği sınırlamak için */
+  margin: 0 auto; /* Ortala */
+  padding: 0 20px; /* Yan boşluk */
+}
+
+/* Copyright */
+.copyright {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Sosyal Medya İkonları */
+.socials {
+  margin-top: 10px; /* Metin ile ikonlar arasına boşluk */
+  display: flex;
+  justify-content: center; /* Ortala */
+  gap: 30px; /* İkonlar arasına boşluk */
+}
+
+.socials a img {
+  width: 24px; /* İkon boyutu */
+  height: 24px;
+  transition: transform 0.3s; /* Hover için animasyon */
+}
+
+.socials a img:hover {
+  transform: scale(1.2); /* Hover sırasında ikonları büyüt */
+}
